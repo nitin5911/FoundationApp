@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">YadavFoundation</string>
+    <string name="phoneverify">Yadav Foundation will send a one time SMS to verify your phone number , Carrier SMS charges may apply.</string>
+    <string name="varify">Please confirm your Country code and enter your phone number.</string>
+    <string name="otpscreentext">OTP has been sent to you on your "\n""\n" Mobile Phone</string>
+    <string name="otpscreenentertext">Enter OTP Code</string>
+    <string name="dontotp">Didn"'"t receive the OTP?</string>
+    <string name="resendotp"><u>Resend Code</u></string>
+    <string name="googlemapApiKey">AIzaSyB8aW4J2VwArmsEwHDbtlMJL6ZC4H8VhDU</string>
+    <string name="title_activity_communitydrawer">Communitydrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

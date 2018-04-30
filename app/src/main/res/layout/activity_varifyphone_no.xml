@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backtheme"
+    android:layout_height="match_parent"
+    tools:context="com.example.amit.yadavfoundation.VarifyphoneNo">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:id="@+id/varifyphonetoolid"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:background="@color/headercolor">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Verify Your Mobile Number"/>
+</android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/yadavcardid"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="150dp"
+        android:elevation="3dp"
+        app:cardBackgroundColor="#efebeb"
+        app:layout_constraintTop_toBottomOf="@+id/varifyphonetoolid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="8dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="@string/phoneverify"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/verifycardid"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="100dp"
+        android:elevation="3dp"
+        app:cardBackgroundColor="#efebeb"
+        android:background="#e1d1d1"
+        app:layout_constraintTop_toBottomOf="@+id/yadavcardid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="8dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="@string/varify"/>
+
+    </android.support.v7.widget.CardView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countryspinnerid"
+        android:prompt="@color/white"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/verifycardid"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:layout_constraintTop_toBottomOf="@+id/countryspinnerid">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtcountycodeid"
+        android:gravity="start"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="+ 91"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etxtphonenoid"
+        android:textColor="@color/white"
+        android:hint="Enter Mobile Number"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/txtcountycodeid"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="end"
+        app:layout_constraintLeft_toRightOf="@+id/txtcountycodeid"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/etxtphonenoid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/next"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/nextimgbtnid"
+        app:layout_constraintLeft_toRightOf="@+id/etxtphonenoid"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        />
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

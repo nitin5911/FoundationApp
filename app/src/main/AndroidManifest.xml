@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.amit.yadavfoundation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAJiZ7mTMsspuCr9HCXMEIynewNRdMTZP8" />
+        <activity android:name=".UserCurrentLocation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".VarifyphoneNo" />
+        <activity android:name=".OTPVerify" />
+        <activity android:name=".CommunicationAddress" />
+        <activity android:name=".PermanentAddress" />
+        <activity
+            android:name=".Communitydrawer"
+            android:label="@string/title_activity_communitydrawer"
+            android:theme="@style/AppTheme" />
+    <activity android:name=".Splash"/>
+        <activity android:name=".NetworkActivity" />
+        <activity android:name=".UserProfile"></activity>
+    </application>
+
+</manifest>
